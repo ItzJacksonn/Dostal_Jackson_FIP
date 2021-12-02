@@ -11,18 +11,80 @@ Tags: Final Project
    01. General Styles
    _____________________________________ */
 
+      .hidden {
+         display: none;
+      }
+
+      .header {
+         position: sticky;
+         top: 0em;
+         background-color: #fff;
+         border-bottom: 1 solid #e6e6e6;
+         box-shadow: 0px 5px 8px #888;
+      }
+
+      .body {
+         margin: 0;
+         padding: 0;
+         color: #626262;
+      }
+
+      .logo {
+         grid-column: 1 / span 1;
+      }
+
+      .logo img {
+         padding: 1em;
+         width: 22%;        
+      }
+
+      /* _____________________________________
+
+   01. CSS Grid
+   _____________________________________ */
+
+   .head, .main > *, .foot {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+   }
 
    /* _____________________________________
 
-   02. Box Model
+   01. Site Header
    _____________________________________ */
 
-    /* _____________________________________
+   /*--- Nav ---*/
 
-   03. Normal Flow
-   _____________________________________ */
+   .nav {
+      grid-column: 2 / span 3;
+      padding-top: 1.5em;
+      margin: 0;
+   }
 
-   /* _____________________________________
+   .nav ul {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      text-align: end;
+   }
 
-   04. Abosulte and Fixed
-   _____________________________________ */
+   .nav li {
+      display: inline;
+      margin-right: 25em;
+   }
+
+   .nav li a {
+      color: #626262;
+      font-size: inherit;
+      text-decoration: none; 
+   }
+
+   .nav li a:hover {
+      padding-bottom: .5em;
+      border-bottom: 3px solid #27aae1;
+   }
+
+   nav li a.active {
+      padding-bottom: .5em;
+      border-bottom: 3px solid #27aae1;
+   }
