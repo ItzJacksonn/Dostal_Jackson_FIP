@@ -35,12 +35,12 @@ Tags: Final Project
 
       .logo img {
          padding: 1em;
-         width: 22%;        
+         width: 100%;       
       }
 
       /* _____________________________________
 
-   01. CSS Grid
+   02. CSS Grid
    _____________________________________ */
 
    .head, .main > *, .foot {
@@ -50,15 +50,24 @@ Tags: Final Project
 
    /* _____________________________________
 
-   01. Site Header
+   03. Site Header
    _____________________________________ */
 
    /*--- Nav ---*/
+
+   .header {
+      position: sticky;
+      top: 0em;
+      background-color: #fff;
+      border-bottom: 1 solid #e6e6e6;
+      box-shadow: 0px 5px 8px #888;
+   }
 
    .nav {
       grid-column: 2 / span 3;
       padding-top: 1.5em;
       margin: 0;
+      margin-top: 2em;
    }
 
    .nav ul {
@@ -66,17 +75,19 @@ Tags: Final Project
       padding: 0;
       text-decoration: none;
       text-align: end;
+      
    }
 
    .nav li {
       display: inline;
-      margin-right: 25em;
+      margin-right: 20em;
    }
 
    .nav li a {
       color: #626262;
-      font-size: inherit;
-      text-decoration: none; 
+      font-size: 22px;
+      text-decoration: none;
+      margin-top: 2em;
    }
 
    .nav li a:hover {
@@ -88,3 +99,13 @@ Tags: Final Project
       padding-bottom: .5em;
       border-bottom: 3px solid #27aae1;
    }
+
+   /* _____________________________________
+
+   04. Hero
+   _____________________________________ */
+
+   /* _____________________________________
+
+   05. Floats
+   _____________________________________ */
