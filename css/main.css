@@ -29,6 +29,32 @@ Tags: Final Project
          color: #626262;
       }
 
+      .text {
+         font-size: 23px;
+      }
+
+      .border-top {
+         border-top: 1px solid #27aae1;
+         padding-top: 1.5em;
+      }
+
+      .border-bottom {
+         border-bottom: 1px solid #27aae1;
+         padding-bottom: 1.5em;
+      }
+
+      .margin-tb {
+         margin: 2em 0em 3em;
+      }
+
+      .margin-left {
+         margin-left: 9em;
+      }
+
+      .margin-left-2 {
+         margin-left: 12.5em;
+      }
+
       .logo {
          grid-column: 1 / span 1;
       }
@@ -38,14 +64,35 @@ Tags: Final Project
          width: 100%;       
       }
 
+      .img {
+         width: 75%;
+      }
+
+      .img-2 {
+         width: 55%;
+      }
+
+
       /* _____________________________________
 
    02. CSS Grid
    _____________________________________ */
 
-   .head, .main > *, .foot {
-      display: grid;
-      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+   @supports (grid-area: auto) {
+
+      .head, .main > *, .foot {
+         display: grid;
+         grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+      }
+
+      .two-items {
+         display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+      }
    }
 
    /* _____________________________________
