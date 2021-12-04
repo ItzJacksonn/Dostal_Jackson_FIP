@@ -11,18 +11,148 @@ Tags: Final Project
    01. General Styles
    _____________________________________ */
 
+      .hidden {
+         display: none;
+      }
+
+      .header {
+         position: sticky;
+         top: 0em;
+         background-color: #fff;
+         border-bottom: 1 solid #e6e6e6;
+         box-shadow: 0px 5px 8px #888;
+      }
+
+      .body {
+         margin: 0;
+         padding: 0;
+         color: #626262;
+      }
+
+      .text {
+         font-size: 23px;
+      }
+
+      .border-top {
+         border-top: 1px solid #27aae1;
+         padding-top: 1.5em;
+      }
+
+      .border-bottom {
+         border-bottom: 1px solid #27aae1;
+         padding-bottom: 1.5em;
+      }
+
+      .margin-tb {
+         margin: 2em 0em 3em;
+      }
+
+      .margin-left {
+         margin-left: 9em;
+      }
+
+      .margin-left-2 {
+         margin-left: 12.5em;
+      }
+
+      .logo {
+         grid-column: 1 / span 1;
+      }
+
+      .logo img {
+         padding: 1em;
+         width: 100%;       
+      }
+
+      .img {
+         width: 75%;
+      }
+
+      .img-2 {
+         width: 55%;
+      }
+
+
+      /* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+      .head, .main > *, .foot {
+         display: grid;
+         grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+      }
+
+      .two-items {
+         display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+      }
+   }
 
    /* _____________________________________
 
-   02. Box Model
+   03. Site Header
    _____________________________________ */
 
-    /* _____________________________________
+   /*--- Nav ---*/
 
-   03. Normal Flow
+   .header {
+      position: sticky;
+      top: 0em;
+      background-color: #fff;
+      border-bottom: 1 solid #e6e6e6;
+      box-shadow: 0px 5px 8px #888;
+   }
+
+   .nav {
+      grid-column: 2 / span 3;
+      padding-top: 1.5em;
+      margin: 0;
+      margin-top: 2em;
+   }
+
+   .nav ul {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      text-align: end;
+      
+   }
+
+   .nav li {
+      display: inline;
+      margin-right: 20em;
+   }
+
+   .nav li a {
+      color: #626262;
+      font-size: 22px;
+      text-decoration: none;
+      margin-top: 2em;
+   }
+
+   .nav li a:hover {
+      padding-bottom: .5em;
+      border-bottom: 3px solid #27aae1;
+   }
+
+   nav li a.active {
+      padding-bottom: .5em;
+      border-bottom: 3px solid #27aae1;
+   }
+
+   /* _____________________________________
+
+   04. Hero
    _____________________________________ */
 
    /* _____________________________________
 
-   04. Abosulte and Fixed
+   05. Floats
    _____________________________________ */
