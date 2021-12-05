@@ -75,12 +75,29 @@ Tags: Final Project
       .img-2 {
          width: 55%;
       }
+      
+      .img-3 {
+         width: 40%;
+      }
 
       .box-model {
          margin: 1rem;
          padding: 1rem;
          background: #27aae1;
          color: #fff
+      }
+
+      .box-model-2 {
+         margin: 2rem;
+         padding: 1rem;
+         background: #27aae1;
+         color: #2e3192
+      }
+
+      .box-model-3 {
+         margin: -1rem -10rem 2rem -20rem;
+         padding: 2rem 2rem;
+         background: #27aae1;
       }
 
       /* _____________________________________
@@ -200,6 +217,16 @@ Tags: Final Project
       margin-top: 1em;
       margin-bottom: 0em;
       font-size: 30px;
+   }
+
+   .hero-img h2.left-2 {
+      align-self: flex-end;
+      justify-self: start;
+      margin-left: 9em;
+      margin-top: 1em;
+      margin-bottom: 0em;
+      font-size: 30px;
+      background-color: #27aae1;
    }
 
    .hero-img h2.right {
